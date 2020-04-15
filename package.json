@@ -60,7 +60,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://localhost:8000"
+      "target": "http://stolen-car-app.herokuapp.com"
     }
   }
 }

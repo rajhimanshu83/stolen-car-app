@@ -1,4 +1,4 @@
-const API_BASE_ADDRESS = 'http://localhost:8000/api';
+const API_BASE_ADDRESS = 'http://stolen-car-app.herokuapp.com/api';
 
 export default class Api {
    static getComplains() {
