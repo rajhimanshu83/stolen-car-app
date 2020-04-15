@@ -22,11 +22,13 @@
     "@types/react-toast-notifications": "^2.4.0",
     "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
+    "bee-queue": "^1.2.3",
     "bootstrap": "^4.4.1",
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "css-loader": "^1.0.1",
     "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.3",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.20.13",
     "moment": "^2.24.0",
@@ -56,5 +58,9 @@
     "tslint": "^6.1.0",
     "typescript": "^3.8.3"
   },
-  "proxy": "http://localhost:8000"
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:8000"
+    }
+  }
 }
