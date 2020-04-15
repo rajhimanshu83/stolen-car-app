@@ -60,7 +60,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "http://stolen-car-app.herokuapp.com"
+      "target": "https://stolen-car-app.herokuapp.com"
     }
   }
 }
