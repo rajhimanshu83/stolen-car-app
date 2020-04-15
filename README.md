@@ -33,22 +33,22 @@ Run the project --> npm run dev
 
 ```
 Add new user
-method:post '/signin'  body: { "name":"Test","email":"xyz@gmail.com","password":"password"}
+method:post 'api/signin'  body: { "name":"Test","email":"xyz@gmail.com","password":"password"}
 
 User Signin
-method:post '/register' body: {"email":"xyz@gmail.com","password":"password"}
+method:post 'api/register' body: {"email":"xyz@gmail.com","password":"password"}
 
 Get All Complains
-method:get '/complains'
+method:get 'api/complains'
 
 Get UnAssigned policeman
-method:get '/unassigned/police'
+method:get 'api/unassigned/police'
 
 Get Assigned policeman
-method:get '/assigned/police'
+method:get 'api/assigned/police'
 
 To Submit Application
-method:post post '/submit/complains' body = {
+method:post post 'api/submit/complains' body = {
             "carModelNumber": "carModelNumber",
             "note": { "text": "note" },
             "cutomerPhoneNumber": "customerPhoneNumber",
@@ -56,13 +56,13 @@ method:post post '/submit/complains' body = {
         }
 
 Change Complain Status
-method:put '/update/complain/:id' body = {
+method:put 'api/update/complain/:id' body = {
             "id": "id",
             "complainId": "complainId",
         }
 
 Auto Assign police
-method:post '/police/assign/auto'
+method:post 'api/police/assign/auto'
 
 ```
 
